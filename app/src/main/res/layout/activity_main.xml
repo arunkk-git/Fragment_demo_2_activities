@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#00ffd4"
+    tools:context="tech.sree.com.fragment_demo_2_activities.MainActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments Demo ..."
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/banner"/>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/fragment_container" >
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Login "
+            android:layout_marginLeft="75dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="gotoLoginForm"
+            android:textColor="#0000FF"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/login"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          |         "
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0000FF"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/gap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  New User "
+            android:gravity="center"
+            android:onClick="gotoRegistationForm"
+            android:textColor="#0000FF"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/newUser"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
